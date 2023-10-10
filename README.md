@@ -69,6 +69,11 @@ where `σ > 0` is the scale parameter.
 ## Usage
 
 ```javascript
+import median from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-rayleigh-median@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/stats-base-dists-rayleigh-median/tags). For example,
+
+```javascript
 import median from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-rayleigh-median@v0.1.1-deno/mod.js';
 ```
 
@@ -117,7 +122,7 @@ var y = median( -1.0 );
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
 import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@deno/mod.js';
-import median from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-rayleigh-median@v0.1.1-deno/mod.js';
+import median from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-rayleigh-median@deno/mod.js';
 
 var sigma;
 var y;
