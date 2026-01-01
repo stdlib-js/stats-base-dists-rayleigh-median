@@ -132,19 +132,16 @@ var y = median( -1.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random-base-randu' );
-var round = require( '@stdlib/math-base-special-round' );
+var uniform = require( '@stdlib/random-array-uniform' );
+var logEachMap = require( '@stdlib/console-log-each-map' );
 var median = require( '@stdlib/stats-base-dists-rayleigh-median' );
 
-var sigma;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var sigma = uniform( 10, 0.0, 20.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    sigma = randu() * 20.0;
-    y = median( sigma );
-    console.log( 'σ: %d, Median(X,σ): %d', sigma.toFixed( 4 ), y.toFixed( 4 ) );
-}
+logEachMap( 'σ: %0.4f, Median(X;σ): %0.4f', sigma, median );
 ```
 
 </section>
@@ -285,7 +282,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -311,8 +308,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 -->
 
-[chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
+[chat-image]: https://img.shields.io/badge/zulip-join_chat-brightgreen.svg
+[chat-url]: https://stdlib.zulipchat.com
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
