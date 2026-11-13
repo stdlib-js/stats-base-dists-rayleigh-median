@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-10-16)
+## Unreleased (2026-11-13)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`04f716f`](https://github.com/stdlib-js/stdlib/commit/04f716f5b8069689d2a64c94040e1ac37167cf3f) - **refactor:** use `constants/float64/nan` in `stats/base/dists/rayleigh/median` [(#16619)](https://github.com/stdlib-js/stdlib/pull/16619) _(by Karan Gupta)_
 -   [`93ff629`](https://github.com/stdlib-js/stdlib/commit/93ff6292ffe553b71e3693be2353ff7e5096898c) - **test:** migrate `stats/base/dists/rayleigh/median` to ULP-based assertions [(#15971)](https://github.com/stdlib-js/stdlib/pull/15971) _(by Athan Reines)_
 -   [`ca49ceb`](https://github.com/stdlib-js/stdlib/commit/ca49ceb1e17979e0ecb77bc50dedd14b7515b46f) - **refactor:** rename internal variable [(#13167)](https://github.com/stdlib-js/stdlib/pull/13167) _(by Philipp Burckhardt)_
 -   [`b517ce1`](https://github.com/stdlib-js/stdlib/commit/b517ce16f647ffe2270573dff57755fe7ba69027) - **docs:** propagate description and example fixes in `stats/base/dists/*` [(#12132)](https://github.com/stdlib-js/stdlib/pull/12132) _(by Philipp Burckhardt)_
@@ -29,9 +30,10 @@
 
 ### Contributors
 
-A total of 4 people contributed to this release. Thank you to the following contributors:
+A total of 5 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Karan Gupta
 -   Om Anand
 -   Philipp Burckhardt
 -   anee3
